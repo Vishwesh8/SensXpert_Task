@@ -1,10 +1,10 @@
 # SensXpert_Task
 
-'requirements.txt' contains all the dependencies reuired for running this project
+'requirements.txt' contains all the dependencies required for running this project, virtual environment can be created from this requirement file.
 
 All python scripts can be found inside 'scripts' directory. 'scripts' also contains Jupyter Notebook 'SensXpert_task'. Complete project can be understood through this Jupyter notebook.
 
-'data' directory has all the raw measurement data.
+Add 'data' folder in the cloned project folder. 'data' folder should contain all the measurement files in csv format.
 
 'generated_data' directory contains transformed training, validation and testing data.
 
