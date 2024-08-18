@@ -1,6 +1,6 @@
 # SensXpert_Task
 
-Repository contains virtual environment required for running the project in directory 'SensXpertTask_venv'. 'requirements.txt' contains all the dependencies reuired for running this project
+'requirements.txt' contains all the dependencies reuired for running this project
 
 All python scripts can be found inside 'scripts' directory. 'scripts' also contains Jupyter Notebook 'SensXpert_task'. Complete project can be understood through this Jupyter notebook.
 
