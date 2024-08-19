@@ -157,7 +157,9 @@ def create_cnn_model(input_shape):
     """
     inputs = Input(shape=input_shape)
     masked_inputs = Masking(mask_value=0.0)(inputs)
-    conv_out = Conv1D(filters=64, kernel_size=3, activation='relu', padding='same')(masked_inputs)
+    conv_out = Conv1D(filters=64, kernel_size=2, activation='relu', padding='same')(masked_inputs)
+    pooled_out = MaxPooling1D()(conv_out)
+    conv_out = Conv1D(filters=32, kernel_size=2, activation='relu', padding='same')(pooled_out)
     pooled_out = GlobalMaxPooling1D()(conv_out)
     outputs = Dense(1)(pooled_out)
 
