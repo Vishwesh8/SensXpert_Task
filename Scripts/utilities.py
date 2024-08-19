@@ -105,7 +105,7 @@ def data_transformation(xcp23, mean_time_cp2_cp3):
     Standardizes, applies PCA and scales the data to prepare for training
     :param xcp23: Pandas dataframe for one measurement with only required columns (time, temperature, DSCalpha, Impedance)
     :param mean_time_cp2_cp3: Mean time between CP2 and CP3 for that specific measurement
-    :return:
+    :return: pandas dataframe with the data ready to be used for training
     """
     # Standardising data
     xcp23 = xcp23.apply(stats.zscore)

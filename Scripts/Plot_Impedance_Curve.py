@@ -1,8 +1,13 @@
 from utilities import *
 
-# Add path to the folder that contains data here
-path = r"E:\MS in Robosys\Job applications\New Job Applications\sensXPERT\Task\data"
-files = glob.glob(path + "/*.csv")
+# Get current directory
+cwd = os.getcwd()
+# Get parent directory
+task_dir = os.path.abspath(os.path.join(cwd, os.pardir))
+# Get data directory
+data_dir = os.path.join(task_dir, "data")
+
+files = glob.glob(data_dir + "/*.csv")
 files = random.sample(files, 10)
 
 # loop over the list of csv files
